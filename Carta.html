@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Greace Sarita</title>
+  <!-- Fuente manuscrita para títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Fuente serif clásica para el texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+      background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+      color: #fff;
+      padding: 50px;
+    }
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 48px;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+      font-family: Arial, sans-serif;
+    }
+    #carta {
+      display: none;
+      background: rgba(255,255,255,0.95);
+      color: #333;
+      border-radius: 15px;
+      padding: 40px;
+      width: 70%;
+      margin: 30px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      animation: aparecer 1s ease-in-out;
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    h3 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 42px;
+      text-align: center;
+      background: linear-gradient(to right, #b06ab3, #4568dc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+    @keyframes aparecer {
+      from {opacity: 0; transform: scale(0.9);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <h2> Feliz cumpleaños Mi Sister 💝</h2>
+  <p style="font-family: 'Times New Roman', Times, serif, sans-serif; font-size:16px;">Ingresa la contraseña:</p>
+  <input type="password" id="pass" placeholder="Escribe la clave...">
+  <button onclick="abrirCarta()">Abrir</button>
+
+  <div id="carta">
+    <h3>🌸 Para ti, Hermana🌸</h3>
+    <p>
+      Greace, sé que no soy de muchas palabras en físico,  
+      pero con esto quiero darte algo que aprendí en la carrera:  
+      ¡hacer que algo sea especial aunque sea digital! 💻✨  
+      <br><br>
+      Sé que a veces somos como el perro y el gato y no congeniamos mucho,  
+      pero cuando llega ese momento en que conectamos,  
+      atesoro cada segundo con tu locura y tu risa. 💛  
+      <br><br>
+      Posiblemente este sea nuestro último año juntas celebrando como solo hermanas,  
+      pero es parte de crecer y era algo que llegaría tarde o temprano.  
+      En estos 24 años que te convertiste en mi hermana,  
+      han sido de enseñanzas, rabias, aventuras, luchas, alegrías, peleas y mucho más.  
+      <br><br>
+      Sé que ahora tenemos que ser más maduras para seguir con esta relación de hermanas  
+      y no cometer los errores que han cometido nuestros parientes,  
+      y trabajaremos en eso juntas.  
+      <br><br>
+      Capaz ahora no se entienda todo lo que te quiero decir pero bueno, ya lo dije antes,
+      no soy muy buena en esto.
+      <br><br>
+      Solo me queda decirte que te amo demasiado y sera dificil este tiempo que se nos avecina
+      pero no lo olvides, somos hermanas y eso es lo unico que importa
+      <br><br>
+      Con mucho cariño,🌸  
+      Tu hermana🌹
+      <br><br>
+      Bazinga
+    </p>
+  </div>
+
+  <script>
+    function abrirCarta() {
+      let clave = document.getElementById("pass").value;
+      if (clave === "Bazinga") {  // 🔑 Aquí cambias la clave
+        document.getElementById("carta").style.display = "block";
+      } else {
+        alert("Contraseña incorrecta ❌");
+      }
+    }
+  </script>
+</body>
+</html>
